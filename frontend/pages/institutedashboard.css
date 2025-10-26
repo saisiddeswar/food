@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ECF0F1; /* Light Gray */
+  color: #2C3E50; /* Dark Blue */
+}
+
+/* Dashboard Layout */
+.institute-dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2C3E50; /* Dark Blue */
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Sidebar Cards */
+.sidebar .card {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.sidebar .card:hover {
+  background-color: #3498DB; /* Bright Blue */
+  transform: translateX(5px);
+}
+
+.sidebar .card.active {
+  background-color: #2980B9; /* Darker Blue */
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .institute-dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2C3E50;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar h1 {
+    display: none;
+  }
+
+  .sidebar .card {
+    flex: 1;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .sidebar .card.active {
+    background-color: #2980B9;
+  }
+
+  .main-content {
+    margin: 10px;
+    padding: 15px;
+    margin-bottom: 60px; /* To prevent overlap with the bottom navigation */
+  }
+}

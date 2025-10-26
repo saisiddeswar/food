@@ -1,0 +1,48 @@
+/* Footer Container */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f8f9fa !important;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Links */
+.footer-link {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: rgb(0, 83, 7);
+}
+
+/* Social Media Icons */
+.social-icon {
+    color: rgba(14, 105, 0, 0.7);
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #086915;
+}
+
+/* Separator Style */
+.separator {
+    color: rgb(177, 177, 177);
+    font-weight: bold;
+}
+
+/* Clickable Home Icon */
+.home-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.home-icon:hover {
+    transform: scale(1.1);
+}

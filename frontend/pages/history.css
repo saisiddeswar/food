@@ -1,0 +1,125 @@
+/* history.css */
+
+.history-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.date-section {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.date-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.date-section h3 {
+    color: #34495e;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.meal-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.meal-card {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.meal-type {
+    font-size: 1.4rem;
+    color: #3498db;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.meal-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.meal-card li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.meal-card li:last-child {
+    border-bottom: none;
+}
+
+.food-name {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.quantity {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.2rem;
+}
+
+/* Loading and Error Messages */
+.history-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.history-container p.error {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .meal-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .meal-card {
+        flex: 1 1 100%;
+    }
+}

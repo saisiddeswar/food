@@ -1,0 +1,61 @@
+.add-food-form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .form-control,
+  .form-select {
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus,
+  .form-select:focus {
+    border-color: #00C853;
+    box-shadow: 0 0 5px rgba(0, 200, 83, 0.5);
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-md {
+    padding: 8px 16px; /* Smaller padding for medium size */
+    font-size: 14px; /* Smaller font size */
+    border-radius: 6px; /* Slightly smaller radius */
+    min-width: 120px; /* Ensure equal minimum width */
+  }
+  
+  .btn-outline-success {
+    border-color: #00C853;
+    color: #00C853;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #00C853;
+    color: #fff;
+  }
+  
+  .btn-warning {
+    background-color: #FFD600;
+    border-color: #FFD600;
+    color: #333;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e6c200;
+    border-color: #e6c200;
+  }
+  
+  /* Ensure equal spacing and alignment */
+  .d-flex.gap-3 {
+    gap: 15px; /* Consistent spacing between buttons */
+  }

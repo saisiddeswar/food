@@ -1,0 +1,19 @@
+/* Main content wrapper */
+.app-wrapper {
+    min-height: 100vh;
+    padding-bottom: 220px; /* Adjust this value based on your footer height */
+    position: relative;
+}
+
+/* Reset default margins and ensure full height */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Ensure proper stacking context */
+#root {
+    min-height: 100vh;
+    position: relative;
+}

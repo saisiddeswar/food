@@ -1,0 +1,146 @@
+/* Navbar.css */
+.navbar {
+  background: linear-gradient(90deg, #fff 0%, #f8f9fa 100%);
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky-top {
+  z-index: 1030; /* Ensure it stays above other content */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-height: 45px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .logo {
+  transform: scale(1.05);
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover .brand-title {
+  color: #00C853; /* Green from your theme */
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  color: #555 !important;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00C853 !important;
+  background: rgba(0, 200, 83, 0.1);
+  border-radius: 5px;
+}
+
+.nav-link.active {
+  color: #00C853 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #00C853;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 200, 83, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.profile-img {
+  border: 2px solid #00C853;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+  border-color: #009c3b;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.dropdown-item {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background: #e8f5e9;
+  color: #00C853;
+}
+
+.auth-links .nav-link {
+  font-size: 1rem;
+  padding: 0.5rem !important;
+}
+
+.auth-links .nav-link:hover {
+  color: #009c3b !important;
+  background: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    padding: 1rem 0;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    padding: 0.75rem 1rem !important;
+  }
+
+  .auth-links {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .auth-links .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    max-height: 35px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    height: 35px;
+    width: 35px;
+  }
+}

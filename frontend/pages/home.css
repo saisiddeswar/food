@@ -1,0 +1,16 @@
+.home-container {
+  font-family: 'Arial', sans-serif;
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}

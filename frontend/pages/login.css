@@ -1,0 +1,56 @@
+/* login.css */
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #00C853;
+  box-shadow: 0 0 5px rgba(0, 200, 83, 0.5);
+}
+
+.btn-md {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.btn-warning {
+  background-color: #FFD600;
+  border-color: #FFD600;
+  color: #333;
+}
+
+.btn-warning:hover {
+  background-color: #e6c200;
+  border-color: #e6c200;
+}
+
+.btn-warning:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.spinner-border {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
