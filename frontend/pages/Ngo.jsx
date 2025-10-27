@@ -21,7 +21,7 @@ const Ngo = () => {
     const fetchNotifications = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/ngo/bookings/${username}`
+          `https://food-backend-service.onrender.com/api/ngo/bookings/${username}`
         );
         if (!response.ok) throw new Error("Failed to fetch notifications");
         const data = await response.json();
@@ -36,7 +36,7 @@ const Ngo = () => {
     const fetchInstitutes = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/ngo/food-availability"
+          "https://food-backend-service.onrender.com/api/ngo/food-availability"
         );
         if (!response.ok) throw new Error("Failed to fetch data");
         const data = await response.json();
@@ -175,7 +175,7 @@ const Ngo = () => {
       return;
     }
 
-    const response = await fetch("http://localhost:5000/api/ngo/book-food", {
+    const response = await fetch("https://food-backend-service.onrender.com/api/ngo/book-food", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -376,7 +376,7 @@ const Ngo = () => {
         transition={{ duration: 0.8 }}
         className="text-center mb-5"
       >
-        <h2 className="fw-bold text-dark">Today's Available Food</h2>
+        <h2 className="fw-bold text-dark">Today&apos;s Available Food</h2>
         <p className="text-muted">Reserve meals to help reduce food waste</p>
       </motion.div>
 

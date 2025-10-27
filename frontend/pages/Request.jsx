@@ -18,7 +18,7 @@ const Request = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:5000/api/ngo/requests?instituteUsername=${instituteUsername}`,
+        `https://food-backend-service.onrender.com/api/ngo/requests?instituteUsername=${instituteUsername}`,
         { method: "GET" }
       );
       if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
@@ -84,7 +84,7 @@ const Request = () => {
         rejectionReason = "Request rejected by institute";
       }
 
-      const response = await fetch(`http://localhost:5000/api/ngo/respond-booking`, {
+      const response = await fetch(`https://food-backend-service.onrender.com/api/ngo/respond-booking`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

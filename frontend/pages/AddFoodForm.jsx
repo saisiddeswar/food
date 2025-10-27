@@ -33,7 +33,7 @@ const AddFoodForm = () => {
     }));
 
     try {
-      const response = await fetch(`http://localhost:5000/api/food/add`, {
+      const response = await fetch(`https://food-backend-service.onrender.com/api/food/add`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, foodItems }),
