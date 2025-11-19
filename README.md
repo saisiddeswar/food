@@ -61,7 +61,7 @@ npm start
 
 ### Frontend Setup
 ```sh
-cd frontend
+cd aass
 
 # Install dependencies
 npm install
